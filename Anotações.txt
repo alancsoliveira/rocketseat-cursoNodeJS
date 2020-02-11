@@ -44,6 +44,9 @@
 
     Mas para funcionar é necessário primeiro adicionar a dependencia nodemon como ferramenta de 
     desenvolvimento.
+
+    As devDependecies são dependencias que serão utilizadas apenas no ambiente de desenvolvimento
+    da aplicação.
     
         $ npn install -D nodemon
     
