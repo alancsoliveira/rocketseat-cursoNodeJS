@@ -1,0 +1,81 @@
+----- O que é API e NodeJS? -----
+
+    Diferente do JavaScript, o nodeJS é uma plataforma que utiliza a engine v8 e atua no lado do Backend, que
+    permite utilizar o javascript para tratar requisiçoes e resposta ao servidor.
+
+    API REST - Separa o back do front. 
+
+----- Instalando NodeJS -----
+    Instalação Padrão
+
+----- Criando estrutura -----
+    A aplicação desenvolvida nesse curso é uma aplicação similar ao
+    Product Hunt, no entanto, será desenvolvida apenas a API.
+
+    Para começar digite o comando a seguir na pasta do projeto: 
+        $ npm init -y
+    Esse comando serve para criar um package.json que tem como
+    principal função, guardar a informação da versão das dependecias
+    do projeto.
+
+    Agora para instalar uma dependencia necessária use:
+        $ npm install express // Esse comando instalou uma nova dependencia
+                                 ao packge.json o express que é basicamente
+                                 um micro framework que vai nos ajudar a lidar
+                                 com rotas e views.
+                                 As rotas são os endereços das URLs que o usuário
+                                 vai poder acessar na nossa API.
+                                 Já as views são as formas de visualização, mas n serão utilizadas aqui.
+    O arquivo que iremos trabalhar é o server.js
+        const express = require('express'); // Importando express
+        const app = express(); // Define variavél app e executa a função express
+        app.listen(3001) // Faz a aplicação ouvir a porta 3001 do servidor  // para executar, no terminal use: node server.js
+
+    
+
+----- Criando primeira rota -----
+    app.get('/', (req, res) => { // O parâmetro req simboliza a requisição que estamos fazendo.  // O parâmetro res, a resposta.
+    res.send('Hello Alan')
+    });
+
+----- Utilizando Nodemon -----
+    A ferramenta Nodemon faz automaticamente a reinicialização do 
+    servidor toda vez que alguma alteração for realizada no arquivo.
+
+    Mas para funcionar é necessário primeiro adicionar a dependencia nodemon como ferramenta de 
+    desenvolvimento.
+    
+        $ npn install -D nodemon
+    
+    Logo após, no arquivo package.json é necessário adicionar a linha no bloco script:
+        
+        "dev": "nodemon server.js"
+
+    Agora ao invés de executar o comando "$ node server.js" para executar o código, utilize:
+        $ npm run dev
+
+----- Instalando MongoDB -----
+    Instalando MongoDB através do DOCKER
+
+----- Conectando Database -----
+
+
+----- Criando model de produto -----
+
+
+----- Reestruturação de arquivos -----
+
+
+----- Utilizando o Insomnia -----
+
+
+----- Criação de registro -----
+
+
+----- CRUD -----
+
+
+----- Paginação da lista -----
+
+
+----- Adicionando CORS -----
