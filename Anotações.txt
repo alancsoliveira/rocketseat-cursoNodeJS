@@ -94,13 +94,13 @@
     Utilizaremos o model de Product na pasta src/models/Product.js
 
     A biblioteca require.dir faz o require automaticamente, para instalar use:
-        $ npm install require-dir
-
-        
-        
+        $ npm install require-dir        
 
 ----- Reestruturação de arquivos -----
-
+    Nesse passo iremos separar as rotas e a lógica do programa em arquivos diferentes.
+    As rotas ficaram em um arquivo chamado routes.js
+    As lógicas ficaram em controllers/ProductController.js
+        O ProductController.js será responável por lidar com as operações possíveis na aplicação.
 
 ----- Utilizando o Insomnia -----
 
