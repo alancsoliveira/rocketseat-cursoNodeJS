@@ -123,3 +123,9 @@
     O comando/rota no insomnia para ir para uma página específica é /products?page=2
 
 ----- Adicionando CORS -----
+    Nesse passo iremos permitir acesso de outros dominios a nossa API.
+    primeiro instale o CORS com o seguinte comando:
+        $ npm install cors
+    
+    Serão feitas alterações em server.js 
+    
