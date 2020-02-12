@@ -116,6 +116,10 @@
 
 
 ----- Paginação da lista -----
-
+    Para usar paginação instale o seguinte módulo:
+        $ npm install mongoose-paginate
+        
+    Também serão feitas alteração nos arquivos Product.js e ProductController.js
+    O comando/rota no insomnia para ir para uma página específica é /products?page=2
 
 ----- Adicionando CORS -----

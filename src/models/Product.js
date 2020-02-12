@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+const mongoosePaginate = require('mongoose-paginate');
 
 // Propriedades que serão salvas na base de dados
 const ProductSchema = new mongoose.Schema({
@@ -19,4 +20,6 @@ const ProductSchema = new mongoose.Schema({
         default: Date.now,
     },
 });
+
+ProductSchema.plugin(mongoosePaginate);
 mongoose.model('Product', ProductSchema);
