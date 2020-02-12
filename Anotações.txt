@@ -59,6 +59,23 @@
 
 ----- Instalando MongoDB -----
     Instalando MongoDB através do DOCKER
+        Sigua: https://docs.docker.com/install/linux/docker-ce/ubuntu/
+        
+        Após a Instalação do docker use o comando para baixar e instalar o mongoDB: 
+            $ docker pull mongo 
+
+        Para subir uma nova máquina virtual contendo essa instalação rodando use:
+            $ docker run --name mongodb -p 27017:27017 -d mongo
+                Nesse comando foi criado uma máquina virtual do mongoDB com nome "mongodb"
+                e ela redireciona chamadas da porta 27017 da maquina física para a porta 27017
+                da máquina virtual Instalada e o último parâmetro identifica a imagem a ser utiliza.
+        
+        Para ver as maquinas que estão rodando use:
+            $ docker ps
+
+        O softwere robo3t serve para verificar mais a fundo o servidor
+            https://robomongo.org/
+
 
 ----- Conectando Database -----
 
