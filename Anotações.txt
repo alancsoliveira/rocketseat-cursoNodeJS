@@ -90,7 +90,14 @@
         
 
 ----- Criando model de produto -----
+    Model no modelo MVC representa uma tabela dentro do banco de dados.
+    Utilizaremos o model de Product na pasta src/models/Product.js
 
+    A biblioteca require.dir faz o require automaticamente, para instalar use:
+        $ npm install require-dir
+
+        
+        
 
 ----- Reestruturação de arquivos -----
 
