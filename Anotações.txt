@@ -103,10 +103,14 @@
         O ProductController.js será responável por lidar com as operações possíveis na aplicação.
 
 ----- Utilizando o Insomnia -----
-
+    Nesse passo utilizaremos o softwere Insomnia para testar as rotas da nossa API, ele pode ser baixado em:
+        https://support.insomnia.rest/article/23-installation
+    Após instalado use:
+        $ insomnia
+        Use o campo Environment para facilitar a digitação das rotas de teste.
 
 ----- Criação de registro -----
-
+    
 
 ----- CRUD -----
 
