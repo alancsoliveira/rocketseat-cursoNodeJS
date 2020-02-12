@@ -73,12 +73,21 @@
         Para ver as maquinas que estão rodando use:
             $ docker ps
 
-        O softwere robo3t serve para verificar mais a fundo o servidor
+        O softwere robo3t serve para verificar mais a fundo o servidor mongodb
             https://robomongo.org/
 
 
 ----- Conectando Database -----
-
+    Agora para fazer a conexão com o banco de dados primeiramente instale o mongoose utilizando o comando:
+        $ npm install mongoose
+            // O mongoose é um ORM de bancos não relacionais com mongodb.
+                // O ORM encapsula a lógica das operações do banco de dados através do código.
+                    Ao invés de utilizarmos querys comuns, podemos utilizar apenas códigos javascript para
+                    fazer as inserções no banco de dados.
+    Para concectar ao banco de dados usasse a sintaxe:
+        const mongoose = require('mongoose');
+        mongoose.connect('mongodb://localhost:27017/nodeapi', { useUnifiedTopology: true, useNewUrlParser: true});
+        
 
 ----- Criando model de produto -----
 
